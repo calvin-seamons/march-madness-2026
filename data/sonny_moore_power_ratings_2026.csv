@@ -1,0 +1,366 @@
+rank,team,wins,losses,sos,power_rating
+1,Duke,32,2,84.42,100.85
+2,Michigan,31,3,86.32,100.84
+3,Arizona,32,2,84.50,100.12
+4,Florida,26,7,84.43,97.16
+5,Iowa St.,27,7,83.23,97.14
+6,Houston,28,6,84.10,95.99
+7,Purdue,27,8,85.44,95.80
+8,Illinois,24,8,83.61,95.80
+9,Virginia,29,5,83.29,94.19
+10,St. John's,28,6,83.14,93.89
+11,Gonzaga,30,3,77.99,93.46
+12,Michigan St.,25,7,84.34,93.40
+13,Louisville,23,10,83.82,93.27
+14,Vanderbilt,26,8,83.67,93.19
+15,Arkansas,26,8,83.64,92.54
+16,Alabama,23,9,86.01,92.40
+17,Tennessee,22,11,83.41,92.21
+18,Nebraska,26,6,82.37,91.90
+19,Connecticut,29,5,83.38,91.84
+20,Kansas,23,10,86.71,91.73
+21,Texas Tech,22,10,85.17,91.62
+22,BYU,23,11,84.21,91.12
+23,Wisconsin,24,10,84.38,90.78
+24,North Carolina,24,8,83.30,90.60
+25,Kentucky,21,13,84.91,90.02
+26,Ohio St.,21,12,84.10,89.77
+27,Iowa,21,12,81.67,89.50
+28,Miami Florida,25,8,80.27,89.44
+29,St. Mary's CA.,27,5,77.25,89.19
+30,Clemson,24,10,83.05,89.13
+31,Georgia,22,10,80.48,89.12
+32,UCLA,23,11,83.03,88.91
+33,Utah St.,28,6,77.57,88.83
+34,North Carolina St.,20,13,83.19,88.79
+35,St. Louis,28,5,73.28,88.51
+36,SMU,20,13,82.82,88.47
+37,Texas A&M,21,11,81.56,87.74
+38,Auburn,17,16,84.87,87.45
+39,Cincinnati,18,15,82.48,87.32
+40,Texas,18,14,81.35,87.18
+41,Villanova,24,8,81.95,87.14
+42,Indiana,18,14,82.94,86.95
+43,TCU,22,11,81.51,86.95
+44,Baylor,16,16,82.09,86.62
+45,Virginia Tech,19,13,82.72,86.46
+46,Oklahoma,19,15,81.37,86.34
+47,Santa Clara,26,8,76.93,86.07
+48,VCU,27,7,76.42,85.67
+49,South Florida,25,8,74.60,85.67
+50,Seton Hall,21,12,81.08,85.37
+51,Missouri,20,12,81.30,84.95
+52,Washington,16,17,81.98,84.73
+53,Central Florida,21,11,82.73,84.69
+54,San Diego St.,22,11,78.19,84.65
+55,New Mexico,23,10,76.02,84.58
+56,Akron,29,5,70.25,84.27
+57,McNeese St.,28,5,71.85,84.08
+58,Stanford,20,12,81.27,83.99
+59,Mississippi,15,20,83.91,83.65
+60,Northwestern,15,19,83.20,83.61
+61,West Virginia,18,14,80.46,83.60
+62,Florida St.,18,15,82.65,83.56
+63,Wake Forest,17,16,82.83,83.50
+64,LSU,15,17,81.54,83.05
+65,Oklahoma St.,19,14,81.88,82.88
+66,Syracuse,15,17,82.54,82.86
+67,Providence,15,18,81.89,82.83
+68,Tulsa,26,7,72.01,82.78
+69,Grand Canyon,20,12,76.74,82.75
+70,Northern Iowa,23,12,74.65,82.73
+71,California,21,11,78.63,82.52
+72,Colorado,17,15,82.21,82.36
+73,Butler,16,16,80.71,82.03
+74,Dayton,23,11,78.24,82.00
+75,Minnesota,15,17,80.88,81.90
+76,Belmont,26,6,73.30,81.84
+77,Creighton,15,17,82.03,81.81
+78,Arizona St.,17,16,84.34,81.69
+79,Georgetown,16,18,81.22,81.59
+80,George Washington,18,15,74.10,81.46
+81,Pittsburgh,13,20,82.62,81.23
+82,Marquette,12,20,81.95,81.15
+83,Nevada,22,12,77.35,80.99
+84,Southern Cal,18,14,80.40,80.84
+85,Boise St.,20,12,77.14,80.82
+86,Hofstra,24,10,71.94,80.69
+87,Notre Dame,13,18,81.42,80.25
+88,Wichita St.,22,11,74.23,80.22
+89,Miami Ohio,31,1,66.72,80.18
+90,Oregon,12,20,83.59,80.07
+91,High Point,30,4,62.12,80.03
+92,Mississippi St.,13,19,83.22,79.84
+93,George Mason,23,9,74.85,79.74
+94,Kansas St.,12,20,82.76,79.67
+95,Utah Valley St.,25,8,69.69,79.61
+96,DePaul,16,16,79.21,79.56
+97,South Carolina,13,19,81.16,79.47
+98,Colorado St.,21,12,75.13,79.34
+99,Illinois St.,20,12,74.43,79.22
+100,Yale,24,6,69.79,78.90
+101,Xavier,15,18,81.30,78.87
+102,Wyoming,18,14,75.35,78.48
+103,Rutgers,14,19,82.36,78.36
+104,Maryland,12,21,84.22,78.21
+105,Southern Illinois,16,16,75.32,78.09
+106,California Irvine,23,11,70.56,78.03
+107,S.F. Austin,28,5,69.04,78.03
+108,Bradley,21,12,74.40,77.90
+109,Utah,10,22,82.41,77.89
+110,Sam Houston St.,22,11,70.91,77.86
+111,Boston College,11,20,80.16,77.66
+112,Florida Atlantic,18,15,74.01,77.61
+113,Alabama Birmingham,20,12,73.29,77.53
+114,Cal Baptist,25,8,72.34,77.49
+115,Penn St.,12,20,82.47,77.31
+116,Murray St.,20,12,74.92,77.28
+117,Illinois Chicago,19,15,72.49,77.19
+118,Rhode Island,16,16,75.89,77.11
+119,Liberty,25,7,70.56,77.05
+120,Georgia Tech,11,20,80.21,76.92
+121,Nevada Las Vegas,17,16,76.26,76.90
+122,Memphis,13,19,78.57,76.73
+123,Texas Rio Grande Valley,19,14,70.94,76.61
+124,Wright St.,23,11,69.92,76.56
+125,Pacific,18,15,73.10,76.47
+126,William & Mary,20,12,72.43,76.47
+127,San Francisco,17,16,75.32,76.45
+128,Hawaii,24,8,67.56,76.45
+129,Bowling Green,18,14,67.94,76.41
+130,Richmond,15,17,74.27,76.29
+131,Duquesne,18,15,73.53,76.26
+132,Kennesaw St.,21,13,69.40,76.26
+133,North Carolina Wilmington,26,6,68.18,76.10
+134,Seattle,20,13,71.80,76.01
+135,Troy St.,22,11,68.61,75.95
+136,Towson St.,19,15,73.21,75.89
+137,St. Bonaventure,17,17,74.19,75.76
+138,Fresno St.,13,19,75.69,75.56
+139,Davidson,20,13,72.02,75.40
+140,Pennsylvania,18,11,72.54,75.38
+141,Loyola Marymount,15,17,73.70,75.29
+142,St. Joseph's PA.,22,11,72.28,75.15
+143,Kent St.,24,9,70.36,75.15
+144,Temple,16,16,72.36,75.06
+145,Fordham,17,15,71.11,74.94
+146,North Texas,19,14,71.60,74.92
+147,Central Arkansas,22,12,69.92,74.91
+148,Harvard,17,12,72.04,74.88
+149,Austin Peay,22,9,67.58,74.80
+150,Toledo,19,15,70.78,74.75
+151,Middle Tennessee St.,17,15,72.72,74.70
+152,Oakland MI,16,16,73.95,74.65
+153,Campbell,16,18,73.09,74.58
+154,Valparaiso,18,15,74.03,74.53
+155,Western Kentucky,18,14,72.00,74.51
+156,Texas Arlington,18,14,71.44,74.33
+157,Monmouth NJ,19,15,72.71,74.22
+158,North Dakota St.,27,7,63.85,74.22
+159,Robert Morris,22,11,70.03,74.19
+160,Cornell,15,13,69.91,74.17
+161,Oregon St.,17,16,76.83,74.15
+162,Navy,26,7,64.67,74.12
+163,Montana St.,18,14,68.28,74.11
+164,Washington St.,12,20,75.52,73.87
+165,Drake,14,20,73.97,73.67
+166,Arkansas St.,20,12,68.78,73.62
+167,Portland St.,20,11,68.19,73.61
+168,Idaho,21,14,68.17,73.55
+169,Marist,19,12,68.40,73.45
+170,California San Diego,23,11,68.80,73.22
+171,Siena,23,11,68.48,73.19
+172,Louisiana Tech,20,14,69.12,73.16
+173,East Tennessee St.,23,11,66.23,73.15
+174,Columbia,16,12,68.99,73.13
+175,Florida International,15,17,70.90,73.12
+176,California Santa Barbara,18,14,69.35,73.11
+177,Maryland Baltimore County,24,8,64.37,73.07
+178,Queens NC,21,13,70.71,72.88
+179,New Mexico St.,16,16,70.20,72.80
+180,North Carolina Charlotte,17,17,74.17,72.80
+181,Furman,22,12,66.88,72.73
+182,Indiana St.,11,21,74.24,72.70
+183,College of Charleston,21,11,71.43,72.65
+184,Jacksonville St.,15,17,69.03,72.62
+185,Mercer,19,13,66.39,72.58
+186,Northern Kentucky,20,14,67.72,72.49
+187,Tennessee St.,23,9,65.47,72.48
+188,Stony Brook,17,15,72.20,72.39
+189,Texas A&M-Corpus Christi,18,15,68.12,72.38
+190,Northern Colorado,20,12,67.34,72.36
+191,Utah Tech,19,15,69.81,72.06
+192,Drexel,17,16,71.39,71.82
+193,Appalachian St.,19,13,67.30,71.80
+194,Merrimack,23,11,70.26,71.77
+195,Missouri St.,16,18,70.64,71.76
+196,Quinnipiac,19,13,68.87,71.75
+197,Massachusetts,17,16,69.59,71.63
+198,Lipscomb,19,13,68.62,71.46
+199,St. Thomas MN.,24,9,61.76,71.30
+200,Marshall,19,13,68.54,71.03
+201,American,16,16,68.23,70.92
+202,Incarnate Word,12,19,70.53,70.87
+203,Rice,13,18,71.22,70.83
+204,Long Island University,24,10,67.85,70.79
+205,Western Carolina,15,16,69.88,70.78
+206,California Davis,19,14,68.54,70.76
+207,Buffalo,17,15,68.97,70.72
+208,Weber St.,16,16,67.47,70.70
+209,San Jose St.,9,24,76.64,70.58
+210,Tulane,18,15,73.78,70.55
+211,Eastern Washington,14,19,71.63,70.44
+212,James Madison,18,15,70.10,70.44
+213,Cal State Fullerton,18,16,69.59,70.40
+214,South Alabama,21,11,66.47,70.38
+215,Southern Mississippi,19,16,69.82,70.37
+216,La Salle,9,23,77.03,70.33
+217,Wisconsin Green Bay,18,15,70.65,70.20
+218,Elon,14,18,70.87,70.18
+219,Youngstown St.,15,17,66.12,70.17
+220,Texas St.,19,13,67.76,70.17
+221,Cal State Northridge,20,14,68.99,70.12
+222,Tennessee Martin,22,11,64.56,70.10
+223,Vermont,22,12,66.09,70.06
+224,Detroit,17,15,70.13,69.93
+225,Purdue Ft. Wayne,17,15,69.32,69.92
+226,Eastern Michigan,10,21,72.34,69.91
+227,Winthrop,23,11,62.81,69.90
+228,New Orleans,15,18,73.42,69.85
+229,Princeton,9,20,73.13,69.61
+230,Florida Gulf Coast,16,18,68.89,69.59
+231,Ohio University,15,17,70.29,69.38
+232,Fairfield,21,13,67.05,69.24
+233,Coastal Carolina,19,13,68.84,69.23
+234,Old Dominion,12,21,71.03,69.17
+235,Hampton,13,19,70.08,69.16
+236,Wisconsin Milwaukee,12,20,72.73,69.12
+237,Lamar,12,19,69.10,69.11
+238,Colgate,18,15,67.81,69.09
+239,Abilene Christian,14,19,71.02,69.07
+240,Texas El Paso,11,20,71.95,69.05
+241,Samford,18,14,65.55,69.00
+242,Bellarmine,13,19,70.34,68.98
+243,Evansville,7,25,77.61,68.97
+244,Iona,18,14,68.62,68.86
+245,East Carolina,11,20,74.21,68.83
+246,Portland,15,19,72.84,68.81
+247,Nicholls St.,14,19,71.43,68.80
+248,Montana,18,16,66.66,68.80
+249,South Dakota St.,14,18,66.89,68.75
+250,Loyola Illinois,9,24,76.96,68.70
+251,San Diego,12,21,71.76,68.66
+252,Charleston Southern,15,17,66.14,68.64
+253,St. Peter's,17,12,67.01,68.60
+254,Boston University,17,17,67.62,68.52
+255,Georgia Southern,21,16,67.68,68.44
+256,Northeastern,7,24,74.09,68.41
+257,Cal Poly,14,19,71.07,68.37
+258,Dartmouth,11,16,69.48,68.22
+259,SE Missouri St.,20,13,64.98,68.19
+260,Lindenwood,18,15,63.85,68.19
+261,West Georgia,15,17,71.11,68.16
+262,Tarleton State,14,18,67.19,67.95
+263,Southern,17,17,66.45,67.89
+264,Jacksonville,12,20,68.59,67.75
+265,Southern Utah,10,22,69.64,67.69
+266,Ball St.,12,19,69.44,67.62
+267,SE Louisiana,9,22,72.04,67.45
+268,Bethune-Cookman,17,15,68.67,67.35
+269,Lehigh,18,16,67.52,67.33
+270,Long Beach St.,10,22,69.39,67.29
+271,Howard,23,10,58.31,67.14
+272,SIU Edwardsville,19,13,62.77,67.09
+273,Pepperdine,9,23,73.98,67.09
+274,Central Connecticut St.,18,12,64.85,67.03
+275,Brown,9,18,67.19,67.02
+276,Mercyhurst,17,17,65.39,67.00
+277,Eastern Kentucky,11,21,68.95,66.96
+278,Radford,16,16,64.97,66.84
+279,Northwestern St.,10,22,70.67,66.80
+280,Sacred Heart,14,19,68.38,66.66
+281,Central Michigan,10,21,69.91,66.62
+282,Wofford,19,13,64.89,66.54
+283,North Carolina A&T,11,19,69.48,66.43
+284,East Texas A&M,11,21,70.39,66.34
+285,Idaho St.,13,20,67.92,66.33
+286,Western Michigan,10,21,70.24,66.16
+287,North Carolina Asheville,15,17,65.19,65.94
+288,Tennessee Chattanooga,13,19,64.98,65.90
+289,Longwood,16,16,62.85,65.89
+290,Mt. St. Mary's MD.,15,17,67.22,65.88
+291,Delaware,10,21,72.31,65.82
+292,Albany,11,21,66.89,65.80
+293,North Florida,7,25,72.52,65.70
+294,California Riverside,10,22,69.86,65.56
+295,Prairie View,18,17,62.50,65.45
+296,Le Moyne,15,17,65.89,65.33
+297,Houston Christian,12,20,69.96,65.17
+298,Loyola Maryland,12,20,67.26,65.07
+299,South Carolina Upstate,13,19,64.90,64.99
+300,Morehead St.,20,13,64.92,64.92
+301,Northern Arizona,10,22,69.70,64.82
+302,Tennessee Tech,13,18,65.29,64.76
+303,Presbyterian College,15,18,64.52,64.59
+304,Denver,15,17,64.94,64.42
+305,Sacramento St.,10,21,68.76,64.41
+306,Georgia St.,10,22,68.13,64.10
+307,North Carolina Greensboro,15,19,65.68,64.04
+308,Manhattan,12,20,67.78,63.96
+309,Louisiana-Lafayette,11,22,70.57,63.94
+310,Lafayette,11,21,68.70,63.92
+311,New Haven,14,17,64.97,63.91
+312,Cleveland St.,11,22,69.76,63.86
+313,Stetson,12,21,69.11,63.61
+314,Oral Roberts,10,23,67.50,63.56
+315,IUPUI,7,25,68.21,63.52
+316,Grambling St.,14,19,63.63,63.49
+317,North Dakota,18,17,64.49,63.46
+318,Texas San Antonio,5,25,73.37,63.40
+319,Mass-Lowell,15,18,65.01,63.27
+320,Arkansas Little Rock,12,20,66.38,63.16
+321,Texas Southern,12,18,65.44,63.04
+322,New Hampshire,9,21,67.95,62.95
+323,Alabama St.,10,22,67.00,62.84
+324,Stonehill,12,21,64.86,62.73
+325,Bucknell,10,23,70.31,62.71
+326,Northern Illinois,9,21,70.19,62.49
+327,Wagner,14,17,62.94,62.44
+328,Eastern Illinois,13,20,64.76,62.42
+329,Canisius,10,21,68.95,62.22
+330,North Alabama,9,21,69.85,62.22
+331,Alabama A&M,18,15,62.51,62.08
+332,Army,11,21,66.42,61.93
+333,Nebraska Omaha,16,17,62.70,61.89
+334,South Dakota,16,16,62.84,61.87
+335,Holy Cross,11,22,66.32,61.76
+336,Florida A&M,15,16,66.26,61.70
+337,N.J. Tech,16,17,66.50,61.49
+338,Arkansas-Pine Bluff,13,19,64.52,61.41
+339,Fairleigh Dickinson,11,21,64.21,61.32
+340,Southern Indiana,7,23,65.31,60.35
+341,Niagara,8,22,66.78,60.32
+342,Cal State Bakersfield,8,24,69.11,60.30
+343,Norfolk St.,15,17,58.23,60.29
+344,Chicago St.,7,25,68.80,59.86
+345,Maryland Eastern Shore,9,23,64.29,59.85
+346,Air Force,3,29,76.60,59.65
+347,Maine,8,24,64.89,59.47
+348,Rider,4,25,70.29,58.98
+349,Citadel,11,22,65.32,58.84
+350,Louisiana Monroe,4,28,69.08,58.74
+351,St. Francis PA.,7,24,66.80,58.51
+352,Bryant,9,22,65.41,58.25
+353,VMI,6,26,65.69,58.22
+354,Alcorn St.,9,23,68.59,58.16
+355,Binghamton,8,23,64.08,58.14
+356,North Carolina Central,14,18,61.25,57.87
+357,Jackson St.,12,21,68.56,57.76
+358,Morgan St.,14,16,58.46,55.81
+359,Western Illinois,5,26,64.30,53.85
+360,Coppin St.,7,24,65.82,53.33
+361,Gardner-Webb,4,29,67.86,52.38
+362,Missouri Kansas City,4,27,65.34,51.87
+363,South Carolina St.,10,22,61.12,51.25
+364,Delaware St.,8,23,58.40,50.63
+365,Mississippi Valley St.,3,30,67.30,50.57
