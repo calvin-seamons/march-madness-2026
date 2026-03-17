@@ -22,13 +22,11 @@ def kenpom_em_to_win_pct(em, team_name=None):
     Convert power rating to an expected win percentage against an average D-I team.
 
     ENSEMBLE APPROACH (like FiveThirtyEight):
-    Blends multiple independent rating systems:
-      - Torvik barthag (40% weight) — best single predictor, tempo-adjusted
-      - SR Adjusted Net Rating (30% weight) — independent SRS-based system
-      - ESPN BPI (30% weight) — ESPN's proprietary model with 10K simulations
-
-    FiveThirtyEight found that blending 6 systems outperformed any single one.
-    Three independent systems should capture most of the benefit.
+    Blends 4 independent rating systems:
+      - Torvik barthag (35%) — best single predictor, tempo-adjusted
+      - SR Adjusted Net Rating (25%) — independent SRS-based system
+      - ESPN BPI (25%) — ESPN's proprietary model with 10K simulations
+      - Sonny Moore Power Ratings (15%) — point-spread based system
     """
     if team_name and team_name in TEAMS:
         t = TEAMS[team_name]
@@ -38,30 +36,38 @@ def kenpom_em_to_win_pct(em, team_name=None):
         # Source 1: Torvik barthag (pre-computed Pythagorean win probability)
         if "_real_barthag" in t:
             estimates.append(t["_real_barthag"])
-            weights.append(0.40)
+            weights.append(0.35)
 
         # Source 2: Sports Reference Adjusted Net Rating (independent system)
         if "_sr_adj_nrtg" in t:
             sr_nrtg = t["_sr_adj_nrtg"]
             sr_win_pct = 1.0 / (1.0 + 10 ** (-sr_nrtg / 17.0))
             estimates.append(sr_win_pct)
-            weights.append(0.30)
+            weights.append(0.25)
 
         # Source 3: ESPN BPI (ESPN's proprietary power index)
         if "_espn_bpi" in t:
             bpi = t["_espn_bpi"]
-            # BPI range: ~-25 (worst) to ~+26 (best)
             # Scale of 16.9 optimized against Vegas R64 odds
             bpi_win_pct = 1.0 / (1.0 + 10 ** (-bpi / 16.9))
             estimates.append(bpi_win_pct)
-            weights.append(0.30)
+            weights.append(0.25)
+
+        # Source 4: Sonny Moore Power Ratings (point-spread based)
+        if "_sm_power" in t:
+            sm = t["_sm_power"]
+            # Range 50-101, mean ~74. Center and convert to win probability.
+            sm_centered = sm - 73.7
+            sm_win_pct = 1.0 / (1.0 + 10 ** (-sm_centered / 11.0))
+            estimates.append(sm_win_pct)
+            weights.append(0.15)
 
         # Fallback: SRS if we have fewer than 2 sources
         if "_real_srs" in t and len(estimates) < 2:
             srs = t["_real_srs"]
             srs_win_pct = 1.0 / (1.0 + 10 ** (-srs / 12.0))
             estimates.append(srs_win_pct)
-            weights.append(0.20)
+            weights.append(0.15)
 
         if estimates:
             total_weight = sum(weights)

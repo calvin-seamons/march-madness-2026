@@ -321,6 +321,67 @@ def load_espn_bpi():
     return data
 
 
+def load_sonny_moore():
+    """Load Sonny Moore Power Ratings — point-spread based system.
+    Fourth independent rating for our ensemble."""
+    filepath = os.path.join(DATA_DIR, "sonny_moore_power_ratings_2026.csv")
+    data = {}
+
+    if not os.path.exists(filepath):
+        return data
+
+    # Sonny Moore uses different team names
+    SM_MAP = {
+        "Duke": "Duke", "Michigan": "Michigan", "Arizona": "Arizona",
+        "Florida": "Florida", "Houston": "Houston",
+        "Iowa St.": "Iowa State", "Connecticut": "UConn",
+        "Purdue": "Purdue", "Illinois": "Illinois",
+        "Michigan St.": "Michigan State", "Gonzaga": "Gonzaga",
+        "Virginia": "Virginia", "Texas Tech": "Texas Tech",
+        "St. John's": "St. John's", "Vanderbilt": "Vanderbilt",
+        "Nebraska": "Nebraska", "Alabama": "Alabama", "Kansas": "Kansas",
+        "Arkansas": "Arkansas", "Wisconsin": "Wisconsin", "BYU": "BYU",
+        "Tennessee": "Tennessee", "North Carolina": "North Carolina",
+        "Louisville": "Louisville", "UCLA": "UCLA", "Kentucky": "Kentucky",
+        "Saint Mary's": "Saint Mary's", "Miami FL": "Miami FL",
+        "Ohio St.": "Ohio State", "TCU": "TCU", "Clemson": "Clemson",
+        "Iowa": "Iowa", "Villanova": "Villanova",
+        "Utah St.": "Utah State", "Georgia": "Georgia",
+        "Saint Louis": "Saint Louis", "UCF": "UCF",
+        "Missouri": "Missouri", "Santa Clara": "Santa Clara",
+        "Texas A&M": "Texas A&M", "Akron": "Akron",
+        "McNeese St.": "McNeese", "VCU": "VCU",
+        "South Florida": "South Florida",
+        "Cal Baptist": "Cal Baptist", "Hofstra": "Hofstra",
+        "Troy": "Troy", "Kennesaw St.": "Kennesaw State",
+        "Northern Iowa": "Northern Iowa", "High Point": "High Point",
+        "Penn": "Penn", "Wright St.": "Wright State",
+        "Furman": "Furman", "Queens": "Queens",
+        "Idaho": "Idaho", "Tennessee St.": "Tennessee State",
+        "Siena": "Siena", "LIU": "Long Island", "Hawaii": "Hawaii",
+        "North Dakota St.": "North Dakota State",
+    }
+
+    with open(filepath) as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            sm_name = row.get("team", "")
+            bracket_name = SM_MAP.get(sm_name)
+            if not bracket_name:
+                if sm_name in SM_MAP.values():
+                    bracket_name = sm_name
+                else:
+                    continue
+
+            data[bracket_name] = {
+                "sm_rank": int(row.get("rank", 999)),
+                "sm_power": safe_float(row.get("power_rating")),
+                "sm_sos": safe_float(row.get("sos")),
+            }
+
+    return data
+
+
 def load_sr_adjusted_ratings():
     """Load Sports Reference adjusted offensive/defensive ratings.
     These are INDEPENDENT from Torvik — gives us a second power rating system."""
@@ -362,6 +423,7 @@ def load_all_real_data():
     sr_opp_adv = load_sr_opponent_advanced()
     sr_ratings = load_sr_adjusted_ratings()
     espn_bpi = load_espn_bpi()
+    sonny_moore = load_sonny_moore()
 
     merged = {}
 
@@ -383,6 +445,8 @@ def load_all_real_data():
             merged[team].update(sr_ratings[team])
         if team in espn_bpi:
             merged[team].update(espn_bpi[team])
+        if team in sonny_moore:
+            merged[team].update(sonny_moore[team])
 
     # Also add BPI teams that might not be in Torvik
     for team, stats in espn_bpi.items():
@@ -476,6 +540,11 @@ def update_teams_with_real_data(teams_dict):
             team_info["_espn_def_bpi"] = rd["espn_def_bpi"]
             team_info["_espn_bpi_rank"] = rd["espn_bpi_rank"]
             team_info["_espn_title_pct"] = rd["espn_title_pct"]
+
+        # Sonny Moore Power Ratings (independent fourth system)
+        if "sm_power" in rd and rd["sm_power"] > 0:
+            team_info["_sm_power"] = rd["sm_power"]
+            team_info["_sm_rank"] = rd["sm_rank"]
 
         updated += 1
 
